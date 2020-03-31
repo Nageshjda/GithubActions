@@ -20,6 +20,7 @@ jobs:
 
   run-poweshell-commands:
     runs-on: windows-latest
+    needs: ["run-shell-commands"]
     steps:
       - name: directory shell
         run: Get-Location
