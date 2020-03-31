@@ -1,6 +1,11 @@
 name: actions workflow
 
-on: [push, pull_request]
+on:
+  schedule:
+    - cron: "0/5 * * * *"
+
+  pull_request:
+    types: [closed, opened, assigned, reopened]
 
 jobs:
   run-javascript-actions:
