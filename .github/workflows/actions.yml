@@ -11,6 +11,8 @@ jobs:
   run-javascript-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: palyload
+        run: echo ${{ github.event.client_payload.env}}
       - name: list of files
         run: |
           pwd
