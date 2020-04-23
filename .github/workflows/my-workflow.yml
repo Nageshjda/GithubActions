@@ -1,7 +1,9 @@
+name: matrix
+
+on: push
+
 jobs:
-
-  build:
-
+  node-version:
     runs-on: ubuntu-latest
     steps:
     - uses: action/checkout@v2
